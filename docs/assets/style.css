@@ -90,11 +90,11 @@ header {
     animation: neon 1.5s infinite alternate;
 }
 .subtitle {
-    font-size:1rem;
-    color:#0ff;
-    text-align:center;
-    margin-bottom:30px;
-    text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
+  font-size: 1rem;
+  color: #0ff;
+  text-align: center;
+  margin-top: 5px;
+  text-shadow: 0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
 }
 
 /* Features */
