@@ -5,11 +5,11 @@ layout: default
 
 <!-- Banner -->
 <div align="center">
-<img src="images/banner.png" alt="Universal Modem Unlocker Banner" width="100%"/>
+<img src="../images/banner.png" alt="Universal Modem Unlocker Banner" width="100%"/>
 </div>
 
 <div align="center">
-<img src="images/logo.png" width="140" alt="Logo"/>
+<img src="../images/logo.png" width="140" alt="Logo"/>
 <h1>🔓 Universal Modem Unlocker</h1>
 <p><i>Professional LTE Modem Unlocking Tool</i></p>
 </div>
