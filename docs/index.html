@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Modem Unlocker</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+<!-- Banner & Logo -->
+<header>
+    <img src="images/banner.png" class="banner" alt="Banner">
+    <div class="logo-container">
+        <img src="images/logo.png" class="logo" alt="Logo">
+        <h1>🔓 Universal Modem Unlocker</h1>
+        <p>Professional LTE Modem Unlocking Tool</p>
+    </div>
+</header>
+
+<!-- Features -->
+<section id="features">
+<div class="container">
+    <h2>🌟 Features / امکانات</h2>
+    <div class="feature-list">
+        <div class="feature">
+            <h3>🇬🇧</h3>
+            <ul>
+                <li>🔓 Unlock all major LTE modems (Huawei, Irancell, etc.)</li>
+                <li>⚡ Portable & Fast EXE</li>
+                <li>🛡 Digitally signed and secure</li>
+                <li>🧩 Multi-brand support</li>
+                <li>🖥 Windows 7 / 8 / 10 / 11 compatible</li>
+            </ul>
+        </div>
+        <div class="feature">
+            <h3>🇮🇷</h3>
+            <ul>
+                <li>🔓 آنلاک همه مودم‌های LTE (هواوی، ایرانسل و غیره)</li>
+                <li>⚡ نسخه اجرایی پرتابل و سریع</li>
+                <li>🛡 دارای امضای دیجیتال و ایمن</li>
+                <li>🧩 پشتیبانی از برندهای مختلف</li>
+                <li>🖥 سازگار با ویندوز 7 / 8 / 10 / 11</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Screenshot Slider -->
+<section id="screenshots">
+<div class="container">
+<h2>📸 Screenshots / تصاویر</h2>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/screenshot1.png" alt="Screenshot 1"></div>
+     
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+</div>
+</section>
+
+<!-- Download & Donate -->
+<section id="download">
+<div class="container">
+<h2>📥 Download & 💰 Donate</h2>
+<div class="buttons">
+<a href="https://github.com/MR-SHARIFI-Dev/UNLOCK_MODEM_TOOL/releases" class="btn download">⬇ Download</a>
+
+<a href="#" class="btn donate">₿ Bitcoin</a>
+<a href="#" class="btn donate">💎 USDT (TRC20)</a>
+</div>
+</div>
+</section>
+
+<!-- Live Stats -->
+<section id="stats">
+<div class="container">
+<h2>📊 Live Stats / آمار زنده</h2>
+<canvas id="unlockChart"></canvas>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container">
+<h2>🔗 Connect / ارتباط</h2>
+<ul>
+<li>Telegram: <a href="https://t.me/hirophp">@hirophp</a></li>
+<li>YouTube: <a href="https://www.youtube.com/@UNLOCK_MODEM_TOOL">UNLOCK_MODEM_TOOL</a></li>
+<li>GitHub: <a href="https://github.com/MR-SHARIFI-Dev/UNLOCK_MODEM_TOOL">UNLOCK_MODEM_TOOL</a></li>
+</ul>
+</div>
+</section>
+
+<script src="assets/script.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    loop:true,
+    pagination: { el: ".swiper-pagination", clickable:true },
+    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+    autoplay: { delay: 4000 },
+});
+
+fetch('https://yourserver.com/api/stats')
+.then(res => res.json())
+.then(data => {
+    new Chart(document.getElementById('unlockChart'), {
+        type: 'bar',
+        data: {
+            labels: data.models,
+            datasets: [{
+                label: 'Unlocks',
+                data: data.counts,
+                backgroundColor: 'rgba(54, 162, 235, 0.6)'
+            }]
+        },
+        options: { responsive:true }
+    });
+});
+</script>
+</body>
+</html>
