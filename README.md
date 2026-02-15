@@ -7,8 +7,8 @@
 
 ![Platform](https://img.shields.io/badge/Platform-Windows%207%2F8%2F10%2F11-blue)
 ![Architecture](https://img.shields.io/badge/x86%20%7C%20x64-Supported-lightgrey)
-![Release](https://img.shields.io/github/v/release/YourUsername/YourRepo)
-![Downloads](https://img.shields.io/github/downloads/YourUsername/YourRepo/total)
+![Release](https://img.shields.io/github/v/release/MR-SHARIFI-Dev/UNLOCK_MODEM_TOOL)
+![Downloads](https://img.shields.io/github/downloads/MR-SHARIFI-Dev/UNLOCK_MODEM_TOOL/total)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Code Signing](https://img.shields.io/badge/Code%20Signing-Digitally%20Signed-brightgreen)
 
