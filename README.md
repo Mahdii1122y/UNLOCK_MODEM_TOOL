@@ -1,5 +1,5 @@
 # 🔓 Universal Modem Unlocker
-### Professional Carrier Unlocking Solution
+### e.g., “Professional LTE Modem Unlocking Tool”
 
 <div align="center">
 <img src="images/logo.png" width="140" alt="Universal Modem Unlocker Logo"/>
