@@ -25,6 +25,7 @@ Universal Modem Unlocker is a professional Windows executable tool designed to r
 
 <div align="center">
 <img src="images/screenshot1.png" width="400" style="margin:20px" alt="Screenshot 1"/>
+<img src="images/screenshot2.png" width="400" style="margin:20px" alt="Screenshot 2"/>
 </div>
 
 ---
@@ -90,6 +91,7 @@ Universal Modem Unlocker یک ابزار حرفه‌ای ویندوزی برای
 
 <div align="center">
 <img src="images/screenshot1.png" width="400" style="margin:20px" alt="Screenshot 1"/>
+<img src="images/screenshot2.png" width="400" style="margin:20px" alt="Screenshot 2"/>
   
 </div>
 
