@@ -2,30 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
+/* Global */
 body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#eee;}
+.container { width:90%; max-width:1200px; margin:40px auto;}
+
+/* Header */
 header { text-align:center; padding:20px; background:#111; position:relative;}
-.banner { width:100%; max-height:300px; object-fit:cover; border-bottom: 3px solid #0ff; box-shadow:0 0 20px #0ff;}
+.banner { width:100%; height:auto; object-fit:cover; border-bottom: 3px solid #0ff; box-shadow:0 0 20px #0ff;}
 .logo-container { margin-top:-60px; animation: glowText 2s infinite alternate;}
 .logo { width:120px; border-radius:10px; border:3px solid #0ff; box-shadow: 0 0 20px #0ff;}
 .unlock-text { font-family:'Vazirmatn', sans-serif; font-size:2rem; color:#0ff; text-shadow: 0 0 5px #0ff,0 0 10px #0ff; animation: neon 1.5s infinite alternate;}
 h1,p { color:#0ff; }
-.container { width:90%; max-width:1200px; margin:40px auto;}
+
+/* Features */
 .feature-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
 .feature { flex:1 1 45%; margin:10px; background:linear-gradient(135deg,#111,#222); padding:15px; border-radius:10px; box-shadow:0 0 15px #0ff; transition:0.3s;}
 .feature:hover { box-shadow:0 0 25px #0ff; transform:scale(1.03);}
+
+/* Slider */
 .swiper-slide img { width:100%; border-radius:10px; box-shadow:0 0 20px #0ff; transition:0.5s; }
 .swiper-slide img:hover { transform:scale(1.05); box-shadow:0 0 35px #0ff;}
-.buttons { display:flex; flex-wrap:wrap; gap:10px;}
+
+/* Buttons */
+.buttons { display:flex; flex-wrap:wrap; gap:10px; justify-content:center;}
 .btn { padding:12px 20px; border-radius:8px; text-decoration:none; color:#fff; font-weight:bold; transition:0.3s; text-align:center; box-shadow:0 0 10px #0ff;}
 .download { background:linear-gradient(90deg,#00f,#0ff);} 
 .download:hover { background:linear-gradient(90deg,#0ff,#00f); color:#000; box-shadow:0 0 25px #0ff; transform:scale(1.05);}
 .donate { background:linear-gradient(90deg,#f90,#ff0);} 
 .donate:hover { background:linear-gradient(90deg,#ff0,#f90); color:#000; box-shadow:0 0 25px #f90; transform:scale(1.05);}
+
+/* Links */
 ul { list-style:none; padding:0;}
 ul li a { color:#0ff; text-decoration:none;} 
 ul li a:hover { text-decoration:underline;}
 
 /* Neon Animations */
 @keyframes neon { 0%{ text-shadow:0 0 5px #0ff,0 0 10px #0ff;} 50%{ text-shadow:0 0 10px #0ff,0 0 20px #0ff;} 100%{ text-shadow:0 0 5px #0ff,0 0 10px #0ff;}}
-@keyframes glowText { 0%{ transform:scale(1);} 50%{ transform:scale(1.05);} 100%{ transform:scale(1);}
+@keyframes glowText { 0%{ transform:scale(1);} 50%{ transform:scale(1.05);} 100%{ transform:scale(1);} }
+
+/* Responsive */
+@media (max-width:768px){
+  .feature-list { flex-direction:column; }
+  .logo-container { margin-top:-40px; }
+  .unlock-text { font-size:1.5rem; }
+  .banner { max-height:200px; }
 }
