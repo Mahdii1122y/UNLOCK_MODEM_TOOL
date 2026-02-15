@@ -65,17 +65,29 @@ header {
     margin-bottom:60px; /* فاصله لوگو */
     border-radius:10px;
 }
-
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* وسط افقی */
+  justify-content: center;   /* وسط عمودی */
+  background: url('images/banner.png') center center/cover no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #0ff;
+  margin-top: 60px; /* فاصله از navbar */
+}
 /* لوگو */
 .logo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  align-items:center;
   border: 3px solid #0ff;
   box-shadow: 0 0 25px #0ff;
   background: #111;
-  margin-bottom: 15px; /* فاصله متن از لوگو */
+  margin-bottom: 15px;
+  z-index: 2;
 }
 
 /* متن بنر */
@@ -170,11 +182,8 @@ footer {
 
 /* Responsive */
 @media(max-width:768px){
-.banner { max-height:200px; }
-.logo { width:100px; height:100px; margin-top:-50px; }
-.unlock-text { font-size:1.5rem; }
-.subtitle { font-size:0.9rem; }
-.feature-list { flex-direction:column; }
-.nav-container { flex-direction:column; }
-.nav-links { flex-direction:column; gap:10px; margin-top:10px; }
+  .banner-wrapper { max-height:200px; }
+  .logo { width:100px; height:100px; }
+  .unlock-text { font-size:1.5rem; }
+  .subtitle { font-size:0.9rem; }
 }
