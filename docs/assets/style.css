@@ -42,22 +42,32 @@ body {
 }
 
 /* Header Banner */
-header { position:relative; margin-top:50px; }
-.banner { width:100%; max-height:250px; object-fit:cover; border-bottom:3px solid #0ff; box-shadow:0 0 20px #0ff;}
+.banner-container { position:relative; width:100%; }
+.banner { width:100%; max-height:250px; object-fit:cover; display:block; }
 .logo-container { margin-top:-60px; text-align:center; position:relative; z-index:2; }
 .logo { width:120px; border-radius:10px; border:3px solid #0ff; box-shadow:0 0 20px #0ff; }
+
+/* لوگو وسط بنر و صفحه */
+.logo-overlay {
+  position:relative;
+  top:-60px; /* کمی روی بنر */
+  text-align:center;
+  z-index:2;
+}
+
 .unlock-text {
   font-family:'Vazirmatn',sans-serif;
   font-size:2rem;
   color:#0ff;
   text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
   animation: neon 1.5s infinite alternate;
+  margin:10px 0 0 0;
 }
-.subtitle {
-  text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
-  font-size:1rem;
-  color:#0ff;
-}
+.subtitle { font-size:1rem; color:#0ff; text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3); margin:5px 0 20px 0; }
+
+
+/* فاصله محتوا از منو */
+header { margin-top:50px; } /* ارتفاع navbar */
 
 /* Features */
 .feature-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
@@ -127,6 +137,7 @@ header { position:relative; margin-top:50px; }
 /* Responsive */
 @media(max-width:768px){
 .banner { max-height:200px; }
+.logo { width:100px; height:100px; }
 .unlock-text { font-size:1.5rem; }
 .subtitle { font-size:0.9rem; }
 .feature-list { flex-direction:column; }
