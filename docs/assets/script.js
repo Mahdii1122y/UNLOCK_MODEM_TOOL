@@ -5,7 +5,7 @@ const text = "🔓 Universal Modem Unlocker";
 setInterval(()=>{
 logoText.textContent = text.substring(0,i+1);
 i = (i+1)%text.length;
-},90);
+},80);
 });
 
 // Swiper Slider
@@ -20,7 +20,7 @@ autoplay: { delay: 4000 },
 const fakeData = { models: ["E5577","B612","TF-i60"], counts: [12482,7560,4321] };
 new Chart(document.getElementById('unlockChart'), {
 type: 'bar',
-data: { labels: fakeData.models, datasets: [{ label: 'Unlocks', data: fakeData.counts, backgroundColor:'rgba(0,255,255,0.6)'}]},
+data: { labels: fakeData.models, datasets: [{ label: 'Unlocks', data: fakeData.counts, backgroundColor:['#0ff','#f0f','#ff0']}]},
 options: { responsive:true }
 });
 
