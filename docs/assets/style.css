@@ -1,28 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
-body { font-family:'Roboto',sans-serif; margin:0; padding:0; background:#0d0d0d; color:#eee; overflow-x:hidden; }
-.container { width:90%; max-width:1200px; margin:40px auto; z-index:2; position:relative; }
+body {
+  font-family:'Roboto',sans-serif;
+  margin:0;
+  padding:0;
+  background:#0d0d0d;
+  color:#eee;
+  overflow-x:hidden;
+}
+
+/* Container */
+.container { width:90%; max-width:1200px; margin:20px auto; position:relative; z-index:2; }
 
 /* Navbar */
-.navbar { width:100%; background: rgba(0,0,0,0.85); position:fixed; top:0; left:0; z-index:999; box-shadow:0 0 10px #0ff; border-bottom:2px solid #0ff; }
+.navbar {
+  width:100%;
+  background: rgba(0,0,0,0.85);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+  box-shadow:0 0 10px #0ff;
+  border-bottom:2px solid #0ff;
+}
 .nav-container { display:flex; justify-content:space-between; align-items:center; padding:10px 20px; }
 .nav-logo { font-size:1.5rem; font-weight:bold; color:#0ff; text-decoration:none; text-shadow:0 0 5px #0ff,0 0 10px #0ff; }
 .nav-links { display:flex; gap:20px; list-style:none; }
-.nav-links li a { text-decoration:none; color:#0ff; padding:5px 10px; border-radius:5px; transition:0.3s; text-shadow:0 0 3px #0ff; }
-.nav-links li a:hover { background: linear-gradient(90deg,#0ff,#f0f,#ff0,#0f0); color:#000; box-shadow:0 0 15px #0ff; transform:scale(1.05); }
+.nav-links li a {
+  text-decoration:none; 
+  color:#0ff; 
+  padding:5px 10px; 
+  border-radius:5px; 
+  transition:0.3s; 
+  text-shadow:0 0 3px #0ff;
+}
+.nav-links li a:hover {
+  color:#0ff;
+  box-shadow:0 0 15px #0ff;
+  transform:scale(1.05);
+}
 
 /* Header Banner */
-.banner { width:100%; max-height:300px; object-fit:cover; border-bottom:3px solid #0ff; box-shadow:0 0 20px #0ff;}
+header { position:relative; margin-top:50px; }
+.banner { width:100%; max-height:250px; object-fit:cover; border-bottom:3px solid #0ff; box-shadow:0 0 20px #0ff;}
 .logo-container { margin-top:-60px; text-align:center; position:relative; z-index:2; }
 .logo { width:120px; border-radius:10px; border:3px solid #0ff; box-shadow:0 0 20px #0ff; }
-.unlock-text { font-family:'Vazirmatn',sans-serif; font-size:2rem; color:#0ff; text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3); animation: neon 1.5s infinite alternate; }
-.subtitle { text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3); font-size:1rem; color:#0ff; }
+.unlock-text {
+  font-family:'Vazirmatn',sans-serif;
+  font-size:2rem;
+  color:#0ff;
+  text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
+  animation: neon 1.5s infinite alternate;
+}
+.subtitle {
+  text-shadow:0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
+  font-size:1rem;
+  color:#0ff;
+}
 
 /* Features */
 .feature-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
-.feature { flex:1 1 45%; margin:10px; background:linear-gradient(135deg,#111,#222); padding:15px; border-radius:10px; box-shadow:0 0 15px #0ff; transition:0.3s; }
-.feature:hover { box-shadow:0 0 25px #0ff; transform:scale(1.03); }
+.feature { flex:1 1 45%; margin:10px; background:linear-gradient(135deg,#111,#222); padding:15px; border-radius:10px; box-shadow:0 0 15px #0ff; }
 .feature h3 { margin-bottom:10px; }
 .feature ul { list-style: none; padding:0; }
 .feature ul li { margin:5px 0; line-height:1.5; }
@@ -33,31 +72,60 @@ body { font-family:'Roboto',sans-serif; margin:0; padding:0; background:#0d0d0d;
 .swiper-slide img { width:100%; border-radius:10px; box-shadow:0 0 20px #0ff; transition:0.5s; }
 .swiper-slide img:hover { transform:scale(1.05); box-shadow:0 0 35px #0ff; }
 
-/* Buttons */
+/* Buttons هکری */
 .buttons { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
-.btn { padding:12px 20px; border-radius:8px; text-decoration:none; color:#fff; font-weight:bold; transition:0.3s; text-align:center; box-shadow:0 0 10px #0ff; }
-.download { background:linear-gradient(90deg,#00f,#0ff);} 
-.download:hover { background:linear-gradient(90deg,#0ff,#00f); color:#000; box-shadow:0 0 25px #0ff; transform:scale(1.05);}
-.donate { background:linear-gradient(90deg,#f90,#ff0);} 
-.donate:hover { background:linear-gradient(90deg,#ff0,#f90); color:#000; box-shadow:0 0 25px #f90; transform:scale(1.05);}
+.btn {
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#0ff;
+  font-weight:bold;
+  transition:0.3s;
+  text-align:center;
+  background:#111;
+  border:2px solid #0ff;
+  box-shadow:0 0 15px #0ff;
+}
+.btn:hover { background:#111; transform:scale(1.05); box-shadow:0 0 25px #0ff; color:#0ff; }
 
 /* Modem Table */
-.modem-table { width:100%; border-collapse: separate; border-spacing:0; border-radius:12px; overflow:hidden; box-shadow:0 0 25px #0ff; background: rgba(0,0,0,0.6); color:#0ff; font-family: 'Roboto', sans-serif;}
-.modem-table th, .modem-table td { padding:12px 15px; border-bottom:1px solid rgba(0,255,255,0.4); text-align:center; text-shadow:0 0 3px rgba(0,255,255,0.5); }
-.modem-table th { background: linear-gradient(90deg,#0ff,#ff0,#f0f,#0f0); color:#000; text-shadow:0 0 3px #fff; }
+.modem-table {
+  width:100%;
+  border-collapse: separate;
+  border-spacing:0;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 0 25px #0ff;
+  background: rgba(0,0,0,0.6);
+  color:#eee;
+  font-family: 'Roboto', sans-serif;
+}
+.modem-table th, .modem-table td {
+  padding:12px 15px;
+  border-bottom:1px solid rgba(0,255,255,0.2);
+  text-align:center;
+  text-shadow:0 0 3px rgba(0,255,255,0.3);
+}
+.modem-table th { background: rgba(0,0,0,0.7); color:#0ff; text-shadow:0 0 3px #0ff; }
 .modem-table td { background: rgba(0,0,0,0.3); border:none; text-align:center; text-shadow:0 0 2px #0ff; }
+
+/* برندها فقط متن رنگی */
+.modem-table td.brand-huawei { color:#f0f; font-weight:bold; }
+.modem-table td.brand-irancell { color:#ff0; font-weight:bold; }
+.modem-table td.brand-zte { color:#0ff; font-weight:bold; }
+
+/* ردیف‌ها */
 .modem-table tr:nth-child(even) td { background: rgba(0,255,255,0.05); }
 .modem-table tr:hover td { transform:scale(1.02); box-shadow:0 0 10px #0ff; transition:0.3s; }
 
-/* Chart Canvas */
+/* Chart */
 #unlockChart { background: rgba(0,0,0,0.7); border-radius:10px; box-shadow:0 0 20px #0ff; }
 
-/* Neon Animations */
+/* Neon Animation */
 @keyframes neon { 0%{ text-shadow:0 0 5px #0ff,0 0 10px #0ff;} 50%{ text-shadow:0 0 10px #0ff,0 0 20px #0ff;} 100%{ text-shadow:0 0 5px #0ff,0 0 10px #0ff;} }
 
 /* Responsive */
-@media (max-width:1200px){ .banner { max-height:250px; } }
-@media (max-width:768px){
+@media(max-width:768px){
 .banner { max-height:200px; }
 .unlock-text { font-size:1.5rem; }
 .subtitle { font-size:0.9rem; }
