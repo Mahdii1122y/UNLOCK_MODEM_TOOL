@@ -1,15 +1,13 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
-/* Global */
-body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#eee;}
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#eee; overflow-x:hidden;}
 .container { width:90%; max-width:1200px; margin:40px auto;}
 
 /* Header */
-header { text-align:center; padding:20px; background:#111; position:relative;}
+header { text-align:center; padding:20px; position:relative; z-index:2;}
 .banner { width:100%; height:auto; object-fit:cover; border-bottom: 3px solid #0ff; box-shadow:0 0 20px #0ff;}
-.logo-container { margin-top:-60px; animation: glowText 2s infinite alternate;}
+.logo-container { margin-top:-60px; animation: glowText 2s infinite alternate; position:relative; z-index:2;}
 .logo { width:120px; border-radius:10px; border:3px solid #0ff; box-shadow: 0 0 20px #0ff;}
 .unlock-text { font-family:'Vazirmatn', sans-serif; font-size:2rem; color:#0ff; text-shadow: 0 0 5px #0ff,0 0 10px #0ff; animation: neon 1.5s infinite alternate;}
 h1,p { color:#0ff; }
