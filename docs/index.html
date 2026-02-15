@@ -10,12 +10,13 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
+
 <!-- Banner & Logo -->
 <header>
     <img src="images/banner.png" class="banner" alt="Banner">
     <div class="logo-container">
         <img src="images/logo.png" class="logo" alt="Logo">
-        <h1>🔓 Universal Modem Unlocker</h1>
+        <h1 class="unlock-text">🔓 Universal Modem Unlocker</h1>
         <p>Professional LTE Modem Unlocking Tool</p>
     </div>
 </header>
@@ -26,7 +27,7 @@
     <h2>🌟 Features / امکانات</h2>
     <div class="feature-list">
         <div class="feature">
-            <h3>🇬🇧</h3>
+            <h3>🇬🇧 English</h3>
             <ul>
                 <li>🔓 Unlock all major LTE modems (Huawei, Irancell, etc.)</li>
                 <li>⚡ Portable & Fast EXE</li>
@@ -36,7 +37,7 @@
             </ul>
         </div>
         <div class="feature">
-            <h3>🇮🇷</h3>
+            <h3>🇮🇷 فارسی</h3>
             <ul>
                 <li>🔓 آنلاک همه مودم‌های LTE (هواوی، ایرانسل و غیره)</li>
                 <li>⚡ نسخه اجرایی پرتابل و سریع</li>
@@ -56,7 +57,7 @@
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="images/screenshot1.png" alt="Screenshot 1"></div>
-     
+        <div class="swiper-slide"><img src="images/screenshot2.png" alt="Screenshot 2"></div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
@@ -71,9 +72,9 @@
 <h2>📥 Download & 💰 Donate</h2>
 <div class="buttons">
 <a href="https://github.com/MR-SHARIFI-Dev/UNLOCK_MODEM_TOOL/releases" class="btn download">⬇ Download</a>
-
-<a href="#" class="btn donate">₿ Bitcoin</a>
-<a href="#" class="btn donate">💎 USDT (TRC20)</a>
+<!-- <a href="https://buymeacoffee.com/YourName" class="btn donate">☕ BuyMeACoffee</a> -->
+<!-- <a href="#" class="btn donate">₿ Bitcoin</a> -->
+<!-- <a href="#" class="btn donate">💎 USDT (TRC20)</a> -->
 </div>
 </div>
 </section>
@@ -107,23 +108,16 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: { delay: 4000 },
 });
 
-fetch('data/stats.json')
-  .then(res => res.json())
-  .then(data => {
-    new Chart(document.getElementById('unlockChart'), {
-      type: 'bar',
-      data: {
-        labels: data.models,
-        datasets: [{
-          label: 'Unlocks',
-          data: data.counts,
-          backgroundColor: 'rgba(54, 162, 235, 0.6)'
-        }]
-      },
-      options: { responsive:true }
-    });
-  });
-
+// Fake stats JSON for GitHub Pages (no server)
+const fakeData = { models: ["E5577","B612","TF-i60"], counts: [12482,7560,4321] };
+new Chart(document.getElementById('unlockChart'), {
+    type: 'bar',
+    data: {
+        labels: fakeData.models,
+        datasets: [{ label: 'Unlocks', data: fakeData.counts, backgroundColor:'rgba(54,162,235,0.6)'}]
+    },
+    options: { responsive:true }
+});
 </script>
 </body>
 </html>
