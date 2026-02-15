@@ -30,6 +30,14 @@ fullScreen: { enable:true, zIndex:-1 },
 particles: { number:{ value:80 }, color:{ value:"#0ff" }, shape:{ type:"circle" }, opacity:{ value:0.3 }, size:{ value:{min:1,max:3} }, move:{ enable:true, speed:1.5, direction:"none", outMode:"bounce" } },
 interactivity:{ events:{ onHover:{ enable:true, mode:"repulse" } } }
 });
+ 
+const toggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+
+toggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+ 
 
 // Code Rain Effect
 const canvas = document.getElementById("codeRain");
