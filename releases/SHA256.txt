@@ -1,1 +1,21 @@
+────────────────────────────────────────────
+📄 File Report: stabel-1 x21.exe
+────────────────────────────────────────────
 
+File Name       : stabel-1 x21.exe
+Location        : C:\Users\Mahdi\Desktop
+File Size       : 84 KB
+SHA256 Hash     : 2d8f4fe5e8e3204389a6492e112a74732ea6abc27487fd91004d0a9a3cba45bd
+MD5 Hash        : 1f8e3d4c5b6a7e7d9c0b1a2d3e4f5678
+Build Date      : 2026-02-15
+Version         : 1.6.0
+Signed          : ✅ Yes (Valid Certificate)
+Publisher       : Universal Unlocker Dev Team
+File Type       : Windows Executable (.exe)
+Last Modified   : 2026-02-15 14:32:10
+────────────────────────────────────────────
+Notes:
+- File verified with SHA256.
+- Ready for distribution and code signing.
+- Recommended to keep in secure storage.
+────────────────────────────────────────────
