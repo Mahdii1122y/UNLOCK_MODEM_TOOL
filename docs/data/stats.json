@@ -1,4 +1,14 @@
 {
-  "models": ["E5577", "B612", "TF-i60"],
-  "counts": [110, 12, 130]
+  "modems": [
+    { "brand": "Huawei", "model": "E5577", "method": "Software Unlock", "time": "1-2 min", "active": true, "color": "#f0f" },
+    { "brand": "Huawei", "model": "B612", "method": "Network Unlock", "time": "2-3 min", "active": true, "color": "#f0f" },
+    { "brand": "Irancell", "model": "TF-i60", "method": "Fast Unlock", "time": "1 min", "active": true, "color": "#ff0" },
+    { "brand": "ZTE", "model": "MF90", "method": "Network Unlock", "time": "2 min", "active": true, "color": "#0ff" }
+  ],
+  "stats": {
+    "E5577": 12482,
+    "B612": 7560,
+    "TF-i60": 4321,
+    "MF90": 2150
+  }
 }
