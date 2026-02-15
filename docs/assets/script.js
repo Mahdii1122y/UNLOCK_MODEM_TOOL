@@ -57,7 +57,7 @@ drawCodeRain();
 window.addEventListener('resize',()=>{canvas.width=window.innerWidth;canvas.height=window.innerHeight;});
 
 
-fetch('data/stats.json')
+fetch('../data/stats.json')
 .then(res => res.json())
 .then(data => {
 
