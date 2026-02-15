@@ -25,8 +25,8 @@ Visit the Releases section to download the latest version.
 ## Global Unlock Statistics
 | Metric | Value |
 |--------|--------|
-| 🌍 Total Unlocks | 0 |
-| ✅ Success Rate | — |
+| 🌍 Total Unlocks | 112 |
+| ✅ Success Rate | 99.8 |
 
 More details: `/docs/statistics.md`
 
@@ -59,8 +59,8 @@ Universal Modem Unlocker یک ابزار حرفه‌ای ویندوزی برای
 ## آمار آنلاک
 | شاخص | مقدار |
 |--------|--------|
-| 🌍 مجموع آنلاک | 0 |
-| ✅ نرخ موفقیت | — |
+| 🌍 مجموع آنلاک | 112 |
+| ✅ نرخ موفقیت | 99.8 |
 
 جزئیات کامل: `/docs/statistics.md`
 
