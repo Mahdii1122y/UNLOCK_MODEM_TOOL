@@ -1,1 +1,17 @@
 
+body { font-family: 'Segoe UI', sans-serif; margin:0; padding:0; background:#0d0d0d; color:#eee;}
+header { text-align:center; padding:20px; background:#111; position:relative;}
+.banner { width:100%; max-height:300px; object-fit:cover;}
+.logo-container { margin-top:-60px;}
+.logo { width:120px; border-radius:10px; border:3px solid #00f;}
+h1,p { color:#0ff; }
+.container { width:90%; max-width:1200px; margin:40px auto;}
+.feature-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
+.feature { flex:1 1 45%; margin:10px; background:#111; padding:15px; border-radius:10px; box-shadow:0 0 10px #0ff;}
+.swiper-slide img { width:100%; border-radius:10px; box-shadow:0 0 15px #0ff;}
+.buttons { display:flex; flex-wrap:wrap; gap:10px;}
+.btn { padding:12px 20px; border-radius:8px; text-decoration:none; color:#fff; font-weight:bold; transition:0.3s;}
+.download { background:#00f; } .download:hover { background:#0ff; color:#000;}
+.donate { background:#f90; } .donate:hover { background:#ff0; color:#000;}
+ul { list-style:none; padding:0;}
+ul li a { color:#0ff; text-decoration:none;} ul li a:hover { text-decoration:underline;}
