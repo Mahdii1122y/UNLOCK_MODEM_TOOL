@@ -117,76 +117,19 @@
 <a href="#" class="btn donate">💎 USDT (TRC20)</a>
 </div>
 </div>
+<section id="stats">
+  <div class="container">
+    <h2>📊 Live Stats / آمار زنده</h2>
+    <div class="chart-wrapper">
+      <canvas id="unlockChart"></canvas>
+    </div>
+  </div>
 </section>
 
-<!-- Live Stats Section -->
-<section id="stats">
-<div class="container">
-<h2>📊 Live Stats / آمار زنده</h2>
-<canvas id="unlockChart"></canvas>
-</div>
-</section>
 
 <script src="assets/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-fetch('data/stats.json')
-.then(res => res.json())
-.then(data => {
 
-  // --- جدول مودم‌ها ---
-  const tableBody = document.querySelector("#modemTable tbody");
-  data.modems.forEach(modem => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td style="color:${modem.color}">${modem.brand}</td>
-      <td>${modem.model}</td>
-      <td>${modem.method}</td>
-      <td>${modem.time}</td>
-      <td>${modem.active ? '✅':'❌'}</td>
-    `;
-    tableBody.appendChild(tr);
-  });
-
-  // --- نمودار ---
-  const labels = Object.keys(data.stats);
-  const values = Object.values(data.stats);
-
-  // رنگ برای هر ستون از modems (اگر کمتر از ستون‌ها بود، تکرار کن)
-  const backgroundColors = data.modems.map(m => m.color);
-  while(backgroundColors.length < labels.length){
-    backgroundColors.push('#0ff'); // رنگ پیشفرض برای ستون اضافی
-  }
-
-  const ctx = document.getElementById('unlockChart').getContext('2d');
-  new Chart(ctx,{
-    type:'bar',
-    data:{
-      labels: labels,
-      datasets:[{
-        label:'Unlocks',
-        data: values,
-        backgroundColor: backgroundColors.slice(0, labels.length),
-        borderColor:'#0ff',
-        borderWidth:1
-      }]
-    },
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-      plugins:{
-        legend:{ labels:{ color:'#0ff', font:{size:14} } }
-      },
-      scales:{
-        x:{ ticks:{ color:'#0ff', font:{size:14} } },
-        y:{ beginAtZero:true, ticks:{ color:'#0ff', font:{size:14} } }
-      }
-    }
-  });
-
-})
-.catch(err => console.error('Error loading stats.json:', err));
-</script>
 </body>
   <footer>
   <p>© 2026 Universal Modem Unlocker | All rights reserved | ساخته شده توسط MR-SHARIFI-Dev</p>
