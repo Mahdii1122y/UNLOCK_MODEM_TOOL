@@ -48,35 +48,24 @@ header {
     padding-top:60px; /* ارتفاع navbar */
 }
 .banner-container {
-    position:relative;
-    width:100%;
-    display:flex;
-     
-    align-items:center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .banner {
-    width:100%;
-    max-height:250px;
-    object-fit:cover;
-    border-bottom:3px solid #0ff;
-    box-shadow:0 0 25px #0ff;
-    display:block;
-    align-items:center;
-    margin-bottom:60px; /* فاصله لوگو */
-    border-radius:10px;
-}
-/* Header Banner Wrapper */
-.banner-wrapper {
   width: 100%;
-  min-height: 300px; /* ارتفاع بنر */
-  background: url('images/banner.png') center center/cover no-repeat;
-  display: flex;
-  flex-direction: column; /* لوگو بالای متن */
-  align-items: center;    /* وسط افقی */
-  justify-content: center; /* وسط عمودی */
+  max-height: 200px; /* کوچکتر و proportional */
+  object-fit: contain; /* حفظ نسبت تصویر */
   border-radius: 10px;
   box-shadow: 0 0 25px #0ff;
-  padding: 20px;
+}
+
+/* لوگو و متن زیر بنر */
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* لوگو */
@@ -90,7 +79,7 @@ header {
   margin-bottom: 15px;
 }
 
-/* متن بنر */
+/* متن */
 .unlock-text {
   font-family: 'Vazirmatn', sans-serif;
   font-size: 2rem;
@@ -100,7 +89,6 @@ header {
   animation: neon 1.5s infinite alternate;
   margin: 0;
 }
-
 .subtitle {
   font-size: 1rem;
   color: #0ff;
@@ -108,7 +96,6 @@ header {
   margin-top: 5px;
   text-shadow: 0 0 5px rgba(0,255,255,0.5),0 0 10px rgba(0,255,255,0.3);
 }
-
 /* Features */
 .feature-list { display:flex; flex-wrap:wrap; justify-content:space-between; }
 .feature { flex:1 1 45%; margin:10px; background:linear-gradient(135deg,#111,#222); padding:15px; border-radius:10px; box-shadow:0 0 15px #0ff; }
