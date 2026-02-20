@@ -5,6 +5,7 @@
     { "brand": "ZLT", "model": "X11", "method": "Software Unlock + super admin", "time": "1-2 min", "active": true, "color": "#f0f" },
     { "brand": "ZLT", "model": "X20", "method": "Software Unlock + super admin", "time": "1-2 min", "active": true, "color": "#f0f" },
     { "brand": "ZLT", "model": "X21", "method": "Software Unlock + super admin", "time": "1-2 min", "active": true, "color": "#f0f" },
+    { "brand": "ZLT", "model": "X25", "method": "Software Unlock + super admin", "time": "1-2 min", "active": true, "color": "#f0f" },
     { "brand": "ZLT", "model": "X28", "method": "Software Unlock + super admin", "time": "1-2 min", "active": true, "color": "#f0f" },
     { "brand": "ZLT", "model": "X28 PRO", "method": "Software Unlock", "time": "1-2 min", "active": true, "color": "#f0f" },
     { "brand": "Irancell", "model": "TF-i60", "method": "Fast Unlock", "time": "1 min", "active": true, "color": "#ff0" },
@@ -17,11 +18,11 @@
     "X11": 170,
     "X20": 110,
     "X21": 50,
-    "X28": 5,
-    "X28 PRO": 2,
+    "X28": 15,
+    "X28 PRO": 12,
     "B612": 10,
     "TF-i60": 20,
-    "MF90": 5
+    "MF90": 15
 
 
 
